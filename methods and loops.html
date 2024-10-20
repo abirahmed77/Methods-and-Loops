@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+
+    <style>
+      body {
+        background-image: linear-gradient(
+          rgb(220, 133, 247),
+          rgb(255, 142, 142)
+        );
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1
+      style="
+        color: rgb(0, 81, 81);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      "
+    >
+      JavaScript Sriting Methods and Loops
+    </h1>
+    <b
+      ><p
+        style="
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
+          color: white;
+        "
+      >
+        Number of 1-10
+      </p></b
+    >
+    <p id="result"></p>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 11; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
